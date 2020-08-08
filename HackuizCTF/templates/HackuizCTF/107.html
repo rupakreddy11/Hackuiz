@@ -1,0 +1,30 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">XOR Brute_Force</h3>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <p>Hackers use a technique called brute force to analyse the encoded text.</p>
+        <p>There you have the message: rxusoaKs{`KyqKL[FKgawwqggraxi</p>
+        <p>No key :( :(</p>
+        <p>Hint: Just brute.. brute... brute....</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

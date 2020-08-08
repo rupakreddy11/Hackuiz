@@ -1,0 +1,28 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Corrupted URL</h3>
+        <p class="d-inline myp">70 points</p>
+        <p class="d-inline myp">Programming</p>
+        <br>
+        <br>
+        <br>
+        <p>The URL that has the flag got corrupted again...</p>
+        <p>here it is: êööòõ¼±±åñæçòçð°ëñ±ðëåîçø´²±è÷îî±øûÛÓüÉ±</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

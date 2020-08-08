@@ -1,0 +1,30 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">XORVELLOUS</h3>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <p>Meet my friend ROX who is marvellous in writing short hand codes which are hard to decipher secret codes.</p>
+        <p>He did something with the below values to generate secret code. Figure that out and move to the next challenge!</p>
+        <p>1xe120 0x1086</p>
+        <p>Your flag should start with 1x</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

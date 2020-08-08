@@ -1,0 +1,30 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Fortune Reversal of Hacker</h3>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <p>Our team of cyber professionals have been tracking a hacker who sends cryptic messages to other hackers about what he's doing. We intercepted the below message he sent recently, can you figure out what it says?</p>
+        <p>I used the same wrap as with all my other problems.</p>
+        <p>That's the code you need.</p>
+        <p>.nac uoy fi tIe$reveRpilF eldnah ym gnisu em egassem ,avaj yllacificeps ,gnidoc emos htiw pleh deen I ,deifitnedi tegrat txeN</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

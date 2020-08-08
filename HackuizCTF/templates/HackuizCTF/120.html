@@ -1,0 +1,28 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Meta mEta meTa metA</h3>
+        <p class="d-inline myp">20 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <p>A cyber criminal shot this photo and hidden a flag inside it. See what you can find out about him from it</p>
+        <p>https://mega.nz/file/h6YVUS4S#hJKdmzAPPCkSk82Q9MUURWnjvMPN6NLHjMdSO0OnPl8</p>
+       <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

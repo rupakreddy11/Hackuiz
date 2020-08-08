@@ -1,0 +1,29 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Practice challenge</h3>
+        <p class="d-inline myp">0 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <p> Welcome to HackuizCTF...</p>
+        <p>This is a practice challenge. Capture the below flag.</p>
+        <p>Flag{Welcome-to-Hackuiz}</p>
+            <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

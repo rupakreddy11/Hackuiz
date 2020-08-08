@@ -1,0 +1,505 @@
+{% extends 'HackuizCTF/base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <div class="container">
+ 	<h3><em style="color:white;"> Hackuiz Challenges</em></h3>
+ 	<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Practice challenge</h4>
+        <p class="d-inline myp">0 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_101'%}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Similar to 2 factor Authentication</h4>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_102' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">5x5 Grid</h4>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_103' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Alpha</h4>
+        <p class="d-inline myp">80 points</p>
+        <p class="d-inline myp">Programming</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_104' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Base 62^2</h4>
+        <p class="d-inline myp">20 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_105' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Walking on the streets of BIN colony</h4>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_106' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">XOR Brute_Force</h4>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_107' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Catch the Shark</h4>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">>Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_108' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Corrupted URL</h4>
+        <p class="d-inline myp">70 points</p>
+        <p class="d-inline myp">Programming</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_109' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Crack me if you can..!</h4>
+        <p class="d-inline myp">20 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_110' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Dustin REDACTED</h4>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_111' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Get the Password</h4>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_112' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Facebook Post Investigation</h4>
+        <p class="d-inline myp">30 points</p>
+        <p class="d-inline myp">Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_113' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Filter and Solve</h4>
+        <p class="d-inline myp">100 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_114' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Protect your Git</h4>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_115' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Up for a Little Challenge</h4>
+        <p class="d-inline myp">80 points</p>
+         <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_116' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Hexsome</h4>
+        <p class="d-inline myp" >40 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_117' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">London Streets</h4>
+        <p class="d-inline myp" >30 points</p>
+        <p class="d-inline myp" >Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_118' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Make it Three</h4>
+        <p class="d-inline myp" >30 points</p>
+        <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_119' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Meta mEta meTa metA</h4>
+        <p class="d-inline myp" >20 points</p>
+        <p class="d-inline myp" >Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_120' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">The Cool Samuel Morse</h4>
+        <p class="d-inline myp" >20 points</p>
+         <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_121' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Guess the Name</h4>
+        <p class="d-inline myp" >40 points</p>
+         <p class="d-inline myp" >Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_122' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Oreo Forensics</h4>
+        <p class="d-inline myp">40 points</p>
+         <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_123' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Photo Analysis</h4>
+        <p class="d-inline myp" >30 points</p>
+         <p class="d-inline myp" >Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_124' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Fortune Reversal of Hacker</h4>
+        <p class="d-inline myp" >40 points</p>
+         <p class="d-inline myp" >Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_125' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">XORVELLOUS</h4>
+        <p class="d-inline myp" >40 points</p>
+        <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_126' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Harddisk Password</h4>
+        <p class="d-inline myp" >70 points</p>
+        <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_127' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Solve this and You'll love me</h4>
+        <p class="d-inline myp" >70 points</p>
+        <p class="d-inline myp" >Programming</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_128' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">My_Stream</h4>
+        <p class="d-inline myp" >30 points</p>
+        <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_129' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Basic Forensic</h4>
+        <p class="d-inline myp" >30 points</p>
+        <p class="d-inline myp" >Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_130' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Substitute if you can</h4>
+        <p class="d-inline myp" >30 points</p>
+         <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_131' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">KGB Agent tracing a criminal</h4>
+        <p class="d-inline myp" >100 points</p>
+         <p class="d-inline myp" >Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_132' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Vigenere Cipher</h4>
+        <p class="d-inline myp" >50 points</p>
+        <p class="d-inline myp" >Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_133' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">White Hat</h4>
+        <p class="d-inline myp" >50 points</p>
+        <p class="d-inline myp" >Forensics</p>
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'chlg_134' %}" class="btn btn-success">Click here to Capture the Flag</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+  
+
+{% endblock %}

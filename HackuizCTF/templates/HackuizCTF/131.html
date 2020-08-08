@@ -1,0 +1,29 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Substitute if you can</h3>
+        <p class="d-inline myp">30 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <p>A cryptanalyst gave me this TOR13 string and challenged me to decode, but I havent the slightest idea to what it depicts.</p>
+        <p>Can you help me with this???</p>
+        <p>https://mega.nz/file/M6wDhCBb#w1_D-wOpQD0giNWUyq_yl3zOy0miffvsEuEK9pDtfsA</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

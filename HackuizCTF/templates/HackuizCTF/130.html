@@ -1,0 +1,28 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Basic Forensic</h3>
+        <p class="d-inline myp">30 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <p>The flag is hidden somewhere in the file. Find it and move on..</p>
+        <p>https://mega.nz/file/czgRxLLS#80_M6O70mWQfE6F0mirD6NFbYgXo_TgqNx2b5-X5AIE</p>
+       <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

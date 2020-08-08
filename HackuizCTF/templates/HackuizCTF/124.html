@@ -1,0 +1,29 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Photo Analysis</h3>
+        <p class="d-inline myp">30 points</p>
+        <p class="d-inline myp">Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <p>You can do it, you just gotta belieeeeeeeeeeeeeeeve!</p>
+        <p>I used the same wrap as with all my other problems.</p>
+        <p>https://mega.nz/file/sjIQCAob#sbUOMEa-kHlDQG8cg6lSS47KVIdXe3QcuOdCbBI8Ryw</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

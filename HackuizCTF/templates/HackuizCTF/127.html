@@ -1,0 +1,29 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Harddisk Password</h3>
+        <p class="d-inline myp">70 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <p>I went into a corporate office and there i have found a harddisk on which these are the numbers attached with the keyword password.</p>
+        <p>Will you please help me to decode them? If yes then insert the flag</p>
+        <p>https://mega.nz/file/cq5HyawK#y-7wprRmNLKhtzcp-8Ab7Bh1REQJEWoOnT4C0DMwvIo</p>
+       <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

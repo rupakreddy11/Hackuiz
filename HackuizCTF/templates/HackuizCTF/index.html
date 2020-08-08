@@ -1,0 +1,106 @@
+{% extends 'HackuizCTF/base.html' %}
+{% load static %}
+
+
+{% block content %}
+       {% if request.user.is_authenticated %}
+           <div class="container prof" style="padding-bottom: 100px;">
+           	<div class="row">
+               <div class="col-sm-6">
+           	    <h3><em style="color: white">Hi {{user.username}}</em></h3>
+           	    <h3>Welcome to Hackuiz!!!</h3>
+              </div>
+              <div class="col-sm-6">
+              	<div class="card">
+              	<div class="card-body">
+              	<h4 class="d-inline prof"><em >Username : </em> </h4>
+              	<h4 class="d-inline prof"><em style="color: white">{{user.username}}</em></h4>
+              	<br>
+              	<br>
+              	<h4 class="d-inline prof"><em >Name : </em> </h4>
+              	<h4 class="d-inline prof"><em style="color: white">{{user.first_name}} {{user.last_name}}</em></h4>
+              	<br>
+              	<br>
+              	<h4 class="d-inline prof"><em >Email : </em> </h4>
+              	<h4 class="d-inline prof"><em style="color: white">{{user.email}}</em></h4>
+                <br>
+                <br>
+                <h4 class="d-inline prof"><em >Score : </em> </h4>
+                <h4 class="d-inline prof"><em style="color: white">{{p}}</em></h4>
+              </div>
+          </div>
+        </div>
+      </div>
+   </div>
+       {% else %}
+       <div class="container">
+        <div class="row no-gutters">
+        	<div class="col-md-6">
+        	  <div class="left-side">
+              <div class="container intro"> 
+    		   	<h2 class="fcol"><em> Hackuiz </em></h2>
+    		   	<br>
+    		   <div class="txt">
+    			<p>An ethical hacking platform which creates a oppurtunity for enthusiastic hackers to learn, solve and compete.</p>
+    			<p>We have a set of challenges of various types and topics in hacking.</p>
+    			<p>Go on and Capture the flags...</p>
+    			</div>
+    			<h4 class="spon"><em>Sponsored by</em></h4>
+    			<a href="https://techionary.info/">
+    			<img src="{% static 'Images/Techionary_logo.png' %}" class="responsive" style="height: 180px; width: 350px">
+    		    </a>
+    		 </div>
+    		</div>
+    	    </div>
+
+    	    <div class="col-md-6">
+    	    <div class="right-side">        
+              <div class="container" style="padding-top: 30px">
+               <h4><em>Challenges Authored by</em></h4>
+               </div>
+            <div class="container profcards">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+               <div class="col-md-4">
+               	<a href="http://adnaanarbaazahmed.in/">
+                <img src="{% static 'Images/adnaan.jpg' %}" class="responsive">
+                </a>
+               </div>
+               <div class="col-md-8">
+               <div class="card-body">
+               <h5 class="card-title"><em style="color: white">Adnaan Arbaaz Ahmed </em></h5>
+               <p class="card-text">CTO & Director, Techionary. </p>
+               </div>
+               </div>
+              </div>
+            </div>
+            </div>  
+             
+             <div class="container">
+               <h4><em>Developed by</em></h4>
+               </div>
+            <div class="container profcards">
+            <div class="card mb-3" >
+              <div class="row no-gutters">
+               <div class="col-md-4">
+               	<a href="https://rupakreddy11.github.io/rupak/">
+                <img src="{% static 'Images/rupak.jpg' %}" class="responsive">
+                </a>
+               </div>
+               <div class="col-md-8">
+               <div class="card-body">
+               <h5 class="card-title"><em style="color: white">Rupak Reddy </em></h5>
+               <p class="card-text" style="text-align: justify;text-justify:inter-word;">Technical Associate, Techionary.</p>
+               </div>
+               </div>
+              </div>
+            </div>
+            </div>
+           </div>
+          </div>
+         </div>
+      </div>
+
+     {% endif %}
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">KGB Agent tracing a criminal</h3>
+        <p class="d-inline myp">100 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <p>KGB Agency - an information gathering organization is tracing a criminal for a long time and finally succeeded in getting the location of his house.When the agent visited the location Unfortunately the criminal disappeared and more than that he shredded the piece of paper which may contain important information</p>
+        <p>Help KGB to restore it. Here is a bin of shredded pieces of paper.</p>
+        <p>Can you help me with this???</p>
+        <p>https://mega.nz/file/AmBzVS6S#wvCVbmVaTaJ_TQP1rMiZclrxYp8MbAMvWTk7m0FLpFE</p>
+       <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

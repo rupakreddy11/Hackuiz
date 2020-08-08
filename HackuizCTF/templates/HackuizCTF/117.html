@@ -1,0 +1,29 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Hexsome</h3>
+        <p class="d-inline myp">40 points</p>
+        <p class="d-inline myp">Cryptography</p>
+        <br>
+        <br>
+        <br>
+        <p>In digital communication, cryptographic standards are established to secure the transfer of information.</p>
+        <p>I've made communication a little bit more difficult. Can you figure this one out?</p>
+        <p>66 6c 61 67 7b 49 5f 73 74 61 72 74 65 64 5f 6c 6f 76 69 6e 67 5f 48 61 63 6b 75 69 7a 7d</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Filter and Solve</h3>
+        <p class="d-inline myp">100 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <p>I Like CTF challenges by Hackuiz and wanted to share my happiness with you all guys.</p>
+        <p>I have contributed to Hackuiz in creating this challenge.</p>
+        <p>Capture the Flag so that i can  smile for you</p>
+        <p>https://mega.nz/file/I7hXUKiI#MAdwaMFD5B-BqdHHqfRSAFNRuRuAAEhjaRhD6jVOGjA</p>
+         <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+from django.urls import path
+from . import views
+from django.contrib.auth import views as auth_views
+
+urlpatterns = [
+   path('', views.home, name='home'),
+   path('login/', views.User_login, name='login'),
+   path('logout/', views.User_logout, name='logout'),
+   path('register/', views.register, name='register'),
+   path('list/login/', views.User_login,name='auth_login'),
+   path('list/', views.challenges, name='challenges'),
+   path('101/', views.chlg_101, name='chlg_101'),
+   path('102/', views.chlg_102, name='chlg_102'),
+   path('103/', views.chlg_103, name='chlg_103'),
+   path('104/', views.chlg_104, name='chlg_104'),
+   path('105/', views.chlg_105, name='chlg_105'),
+   path('106/', views.chlg_106, name='chlg_106'),
+   path('107/', views.chlg_107, name='chlg_107'),
+   path('108/', views.chlg_108, name='chlg_108'),
+   path('109/', views.chlg_109, name='chlg_109'),
+   path('110/', views.chlg_110, name='chlg_110'),
+   path('111/', views.chlg_111, name='chlg_111'),
+   path('112/', views.chlg_112, name='chlg_112'),
+   path('113/', views.chlg_113, name='chlg_113'),
+   path('114/', views.chlg_114, name='chlg_114'),
+   path('115/', views.chlg_115, name='chlg_115'),
+   path('116/', views.chlg_116, name='chlg_116'),
+   path('117/', views.chlg_117, name='chlg_117'),
+   path('118/', views.chlg_118, name='chlg_118'),
+   path('119/', views.chlg_119, name='chlg_119'),
+   path('120/', views.chlg_120, name='chlg_120'),
+   path('121/', views.chlg_121, name='chlg_121'),
+   path('122/', views.chlg_122, name='chlg_122'),
+   path('123/', views.chlg_123, name='chlg_123'),
+   path('124/', views.chlg_124, name='chlg_124'),
+   path('125/', views.chlg_125, name='chlg_125'),
+   path('126/', views.chlg_126, name='chlg_126'),
+   path('127/', views.chlg_127, name='chlg_127'),
+   path('128/', views.chlg_128, name='chlg_128'),
+   path('129/', views.chlg_129, name='chlg_129'),
+   path('130/', views.chlg_130, name='chlg_130'),
+   path('131/', views.chlg_131, name='chlg_131'),
+   path('132/', views.chlg_132, name='chlg_132'),
+   path('133/', views.chlg_133, name='chlg_133'),
+   path('134/', views.chlg_134, name='chlg_134'),
+
+
+]

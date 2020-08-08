@@ -1,0 +1,28 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Protect your Git</h3>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">Miscellaneous</p>
+        <br>
+        <br>
+        <br>
+        <p>The flag used to be there. But then I redacted it. Find the Flag</p>
+        <p>https://mega.nz/file/hnQSTaJS#5xf4tw2Z53yCD9HBLB9TXDsra9mwszFvWnMq3R3as4o</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'HackuizCTF/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Catch the Shark</h3>
+        <p class="d-inline myp">50 points</p>
+        <p class="d-inline myp">Forensics</p>
+        <br>
+        <br>
+        <br>
+        <p>My boss asked me to capture the flag available in the file.</p>
+        <p>But this isn't what i had in my mind when he asked me to capture it.</p>
+        <p>Need your help. Kindly help me as this may save my job.</p>
+        <p>https://mega.nz/file/dr4ynKqQ#KUa_D7YN6lvJmjCPGbXIsgLghUkWIW_s2S8s3os_o-A</p>
+        <form method="POST">
+            {% csrf_token %}
+        <fieldset>
+        <label class="lbl" >Enter the Flag:</label>
+        <input type="text" name="flag" class="flag_input" autocomplete="off" placeholder="HackuizCTF{...}">
+        <button class="btn btn-success mybtn"> Submit </button> 
+        </fieldset>
+        </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}
